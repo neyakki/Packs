@@ -1,0 +1,25 @@
+{
+  "name": "web-pack",
+  "displayName": "web-pack",
+  "publisher": "NetoGeek",
+  "icon": "js.png",
+  "description": "Extensions for web",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "dbaeumer.vscode-eslint",
+    "wix.vscode-import-cost",
+    "ecmel.vscode-html-css",
+    "oouo-diogo-perdigao.docthis",
+    "mgmcdermott.vscode-language-babel",
+    "humao.rest-client",
+    "formulahendry.auto-complete-tag",
+    "ritwickdey.LiveServer",
+    "christian-kohler.npm-intellisense"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "base-pack",
+  "displayName": "base-pack",
+  "description": "",
+  "publisher": "NetoGeek",
+  "icon": "core.png",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [ 
+    "BeardedBear.beardedtheme", 
+    "esbenp.prettier-vscode", 
+    "quicktype.quicktype", 
+    "rubenverg.bootstrap-product-icons", 
+    "tal7aouy.icons",
+    "markis.code-coverage",
+    "aaron-bond.better-comments",
+    "janisdd.vscode-edit-csv",
+    "mechatroner.rainbow-csv",
+    "redhat.vscode-yaml",
+    "mikestead.dotenv",
+    "kisstkondoros.vscode-gutter-preview",
+    "elagil.pre-commit-helper",
+    "oderwat.indent-rainbow",
+    "donjayamanne.githistory",
+    "christian-kohler.path-intellisense",
+    "streetsidesoftware.code-spell-checker",
+    "formulahendry.code-runner",
+    "streetsidesoftware.code-spell-checker-russian"
+  ]
+}

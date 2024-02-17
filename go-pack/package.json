@@ -1,0 +1,22 @@
+{
+  "name": "go-pack",
+  "displayName": "go-pack",
+  "description": "",
+  "publisher": "NetoGeek",
+  "icon": "golang.png",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [ 
+    "golang.Go",
+    "msyrus.go-doc",
+    "premparihar.gotestexplorer",
+    "766b.go-outliner",
+    "MaxMedia.go-prof",
+    "defaltd.go-coverage-viewer"
+  ]
+}

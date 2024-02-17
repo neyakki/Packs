@@ -1,0 +1,50 @@
+[
+    {
+        "identifier": {
+            "id": "netogeek.python-pack"
+        },
+        "version": "0.0.1",
+        "location": {
+            "$mid": 1,
+            "path": "/home/neto/.vscode/extensions/python-pack",
+            "scheme": "file"
+        },
+        "relativeLocation": "python-pack"
+    },
+    {
+        "identifier": {
+            "id": "netogeek.go-pack"
+        },
+        "version": "0.0.1",
+        "location": {
+            "$mid": 1,
+            "path": "/home/neto/.vscode/extensions/go-pack",
+            "scheme": "file"
+        },
+        "relativeLocation": "go-pack"
+    },
+    {
+        "identifier": {
+            "id": "netogeek.web-pack"
+        },
+        "version": "0.0.1",
+        "location": {
+            "$mid": 1,
+            "path": "/home/neto/.vscode/extensions/web-pack",
+            "scheme": "file"
+        },
+        "relativeLocation": "web-pack"
+    },
+    {
+        "identifier": {
+            "id": "netogeek.base-pack"
+        },
+        "version": "0.0.1",
+        "location": {
+            "$mid": 1,
+            "path": "/home/neto/.vscode/extensions/base-pack",
+            "scheme": "file"
+        },
+        "relativeLocation": "base-pack"
+    }
+]
