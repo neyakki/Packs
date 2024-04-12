@@ -2,20 +2,28 @@
   "name": "base-pack",
   "displayName": "base-pack",
   "description": "",
-  "publisher": "NetoGeek",
+  "publisher": "neyakki",
   "icon": "core.png",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.84.0"
   },
   "categories": [
     "Extension Packs"
   ],
-  "extensionPack": [ 
-    "BeardedBear.beardedtheme", 
-    "esbenp.prettier-vscode", 
-    "quicktype.quicktype", 
-    "rubenverg.bootstrap-product-icons", 
+  "extensionPack": [
+    "BeardedBear.beardedtheme",
+    "tamasfe.even-better-toml",
+    "jeff-hykin.better-dockerfile-syntax",
+    "ms-vscode-remote.remote-containers",
+    "p1c2u.docker-compose",
+    "esbenp.prettier-vscode",
+    "quicktype.quicktype",
+    "SonarSource.sonarlint-vscode",
+    "usernamehw.errorlens",
+    "yzhang.markdown-all-in-one",
+    "ms-azuretools.vscode-docker",
+    "rubenverg.bootstrap-product-icons",
     "tal7aouy.icons",
     "markis.code-coverage",
     "aaron-bond.better-comments",
