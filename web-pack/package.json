@@ -4,7 +4,7 @@
   "publisher": "NetoGeek",
   "icon": "js.png",
   "description": "Extensions for web",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -20,6 +20,8 @@
     "humao.rest-client",
     "formulahendry.auto-complete-tag",
     "ritwickdey.LiveServer",
-    "christian-kohler.npm-intellisense"
+    "christian-kohler.npm-intellisense",
+    "mrmlnc.vscode-scss",
+    "sibiraj-s.vscode-scss-formatter"
   ]
 }
