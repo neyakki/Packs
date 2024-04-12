@@ -4,7 +4,7 @@
     "publisher": "NetoGeek",
     "icon": "python.png",
     "description": "Extensions from python",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.84.0"
     },
@@ -20,10 +20,9 @@
         "njqdev.vscode-python-typehint",
         "wholroyd.jinja",
         "charliermarsh.ruff",
-        "ms-python.pylint",
-        "ms-pyright.pyright",
         "matangover.mypy",
         "nwgh.bandit",
-        "mgesbert.python-path"
+        "mgesbert.python-path",
+        "ms-python.isort"
     ]
 }
