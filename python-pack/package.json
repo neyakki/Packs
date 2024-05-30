@@ -1,10 +1,10 @@
 {
     "name": "python-pack",
     "displayName": "python-pack",
-    "publisher": "NetoGeek",
+    "publisher": "neyakki",
     "icon": "python.png",
     "description": "Extensions from python",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "engines": {
         "vscode": "^1.84.0"
     },
@@ -12,6 +12,7 @@
         "Extension Packs"
     ],
     "extensionPack": [
+        "samuelcolvin.jinjahtml",
         "ms-python.python",
         "KevinRose.vsc-python-indent",
         "donjayamanne.python-environment-manager",

@@ -4,7 +4,7 @@
   "description": "",
   "publisher": "neyakki",
   "icon": "core.png",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -12,6 +12,12 @@
     "Extension Packs"
   ],
   "extensionPack": [
+    "VisualStudioExptTeam.vscodeintellicode",
+    "ms-vscode.makefile-tools",
+    "hbenl.vscode-test-explorer",
+    "ms-vscode.test-adapter-converter",
+    "humao.rest-client",
+    "rangav.vscode-thunder-client",
     "BeardedBear.beardedtheme",
     "tamasfe.even-better-toml",
     "jeff-hykin.better-dockerfile-syntax",

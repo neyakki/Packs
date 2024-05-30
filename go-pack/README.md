@@ -1,4 +1,4 @@
-# web-pack README
+# go-pack README
 
 ## Working with Markdown
 

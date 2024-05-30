@@ -8,4 +8,4 @@ https://mister-gold.pro/posts/create-vscode-extension-pack/
 
 - Base-pack;
 - Python-pack;
-- Web-pack.
+- Go-pack.
