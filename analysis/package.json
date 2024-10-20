@@ -1,0 +1,19 @@
+{
+  "name": "analysis-pack",
+  "displayName": "analysis-pack",
+  "description": "Extensions for data analysis",
+  "publisher": "neyakki",
+  "icon": "analysis.png",
+  "version": "0.3.0",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "janisdd.vscode-edit-csv",
+    "ms-toolsai.jupyter",
+    "mechatroner.rainbow-csv"
+  ]
+}

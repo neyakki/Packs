@@ -7,5 +7,8 @@ https://mister-gold.pro/posts/create-vscode-extension-pack/
 Паки:
 
 - Base-pack;
+- Docker-pack;
+- Theme-pack;
+- Analysis-pack;
 - Python-pack;
 - Go-pack.

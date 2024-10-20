@@ -1,12 +1,12 @@
 {
   "name": "docker-pack",
   "displayName": "docker-pack",
-  "description": "",
+  "description": "Extensions for docker",
   "publisher": "neyakki",
   "icon": "docker.png",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "engines": {
-    "vscode": "^1.84.0"
+    "vscode": "^1.94.0"
   },
   "categories": [
     "Extension Packs"

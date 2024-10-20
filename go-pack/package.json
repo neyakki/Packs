@@ -1,12 +1,12 @@
 {
   "name": "go-pack",
   "displayName": "go-pack",
-  "description": "",
+  "description": "Extension for golang",
   "publisher": "neyakki",
   "icon": "golang.png",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "engines": {
-    "vscode": "^1.84.0"
+    "vscode": "^1.94.0"
   },
   "categories": [
     "Extension Packs"
