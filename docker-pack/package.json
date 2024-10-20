@@ -1,0 +1,20 @@
+{
+  "name": "docker-pack",
+  "displayName": "docker-pack",
+  "description": "",
+  "publisher": "neyakki",
+  "icon": "docker.png",
+  "version": "0.2.0",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "jeff-hykin.better-dockerfile-syntax",
+    "ms-vscode-remote.remote-containers",
+    "ms-azuretools.vscode-docker",
+    "p1c2u.docker-compose"
+  ]
+}
