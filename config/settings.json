@@ -1,0 +1,51 @@
+{
+  "workbench.startupEditor": "none",
+  "extensions.ignoreRecommendations": true,
+  "files.autoSave": "afterDelay",
+  "editor.renderWhitespace": "selection",
+  "files.exclude": {
+    "**/.git": false
+  },
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.cursorStyle": "line-thin",
+  "editor.minimap.autohide": true,
+  "editor.fontFamily": "'FiraCode Nerd Font Mono', 'Ubuntu'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.codeLensFontFamily": "'FiraCode Nerd Font', 'Ubuntu'",
+  "editor.inlayHints.fontFamily": "'FiraCode Nerd Font', 'Ubuntu'",
+  "debug.console.fontFamily": "'FiraCode Nerd Font', 'Ubuntu'",
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'Ubuntu'",
+  "terminal.integrated.fontSize": 14,
+  "workbench.activityBar.location": "top",
+  "workbench.view.alwaysShowHeaderActions": true,
+  "breadcrumbs.icons": false,
+  "breadcrumbs.symbolPath": "off",
+  "workbench.editor.alwaysShowEditorActions": true,
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "workbench.editor.pinnedTabSizing": "shrink",
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "window.autoDetectHighContrast": false,
+  "window.commandCenter": false,
+  "window.customMenuBarAltFocus": false,
+  "window.density.editorTabHeight": "compact",
+  "window.menuBarVisibility": "toggle",
+  "window.title": "${rootName}${separator}${activeEditorMedium}",
+  "window.titleSeparator": ":",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.tabSize": 2
+  },
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "helium-icon-theme",
+  "workbench.panel.showLabels": false,
+  "workbench.productIconTheme": "feather-vscode",
+  "workbench.colorTheme": "GitHub Dark"
+}

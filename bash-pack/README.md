@@ -1,4 +1,4 @@
-# go-pack README
+# python-pack README
 
 ## Working with Markdown
 

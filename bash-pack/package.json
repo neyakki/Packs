@@ -1,0 +1,22 @@
+{
+  "name": "python-pack",
+  "displayName": "python-pack",
+  "publisher": "neyakki",
+  "icon": "bash.png",
+  "description": "Extensions for python",
+  "version": "0.3.0",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "rpinski.shebang-snippets",
+    "foxundermoon.shell-format",
+    "timonwong.shellcheck",
+    "rogalmic.bash-debug",
+    "mads-hartmann.bash-ide-vscode",
+    "shakram02.bash-beautify"
+  ]
+}
