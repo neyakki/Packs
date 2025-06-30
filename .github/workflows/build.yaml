@@ -27,9 +27,3 @@ jobs:
 
       - name: Сборка VSIX пакета
         run: cd packs/base-pack && npx @vscode/vsce package --allow-missing-repository --skip-license -o base-pack.vsix
-
-      - name: Загрузка VSIX как артефакт
-        uses: actions/upload-artifact@v3
-        with:
-          name: extension
-          path: "*.vsix"
