@@ -47,5 +47,12 @@
   "workbench.iconTheme": "helium-icon-theme",
   "workbench.panel.showLabels": false,
   "workbench.productIconTheme": "feather-vscode",
-  "workbench.colorTheme": "GitHub Dark"
+  "workbench.colorTheme": "GitHub Dark",
+  "gopls": {
+    "ui.semanticTokens": true,
+    "formatting.gofumpt": true
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  }
 }
