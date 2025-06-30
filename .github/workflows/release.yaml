@@ -38,7 +38,6 @@ jobs:
           cp scripts/install-vsix.sh $GITHUB_WORKSPACE/dist/scripts/install-vsix.sh
 
       - name: Тест
-        uses: actions/upload-artifact@v4
         run: ls -lh dist/
 
       - name: Создание GitHub релиза
