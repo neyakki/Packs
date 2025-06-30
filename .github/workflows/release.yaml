@@ -30,7 +30,7 @@ jobs:
           cd packs/bash-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/bash-pack.vsix && cd ../..
           cp config/* $GITHUB_WORKSPACE/dist/config/
           cp scripts/copy-config.sh $GITHUB_WORKSPACE/dist/scripts/copy-config.sh
-          cp scripts/instal-vsix.sh $GITHUB_WORKSPACE/dist/scripts/instal-vsix.sh
+          cp scripts/install-vsix.sh $GITHUB_WORKSPACE/dist/scripts/install-vsix.sh
 
       # - name: Загрузка VSIX как артефакт
       #   uses: actions/upload-artifact@v4
