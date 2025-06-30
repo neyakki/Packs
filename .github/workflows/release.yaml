@@ -23,9 +23,7 @@ jobs:
 
       - name: Сборка настроек
         run: |
-          mkdir -p $GITHUB_WORKSPACE/dist/scripts
-          mkdir -p $GITHUB_WORKSPACE/dist/config
-          mkdir -p $GITHUB_WORKSPACE/dist/packs
+          mkdir -p $GITHUB_WORKSPACE/dist/{scripts,config,packs}
           cd packs/base-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/base-pack.vsix && cd ../..
           cd packs/python-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/python-pack.vsix && cd ../..
           cd packs/docker-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/docker-pack.vsix && cd ../..
