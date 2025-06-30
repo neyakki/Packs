@@ -23,11 +23,13 @@ jobs:
 
       - name: Сборка настроек
         run: |
-          mkdir -p $GITHUB_WORKSPACE/dist/{scripts,config,packs}
-          cd packs/base-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/base-pack.vsix
-          cd packs/python-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/python-pack.vsix
-          cd packs/docker-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/docker-pack.vsix
-          cd packs/bash-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/bash-pack.vsix
+          mkdir -p $GITHUB_WORKSPACE/dist/scripts
+          mkdir -p $GITHUB_WORKSPACE/dist/config
+          mkdir -p $GITHUB_WORKSPACE/dist/packs
+          cd packs/base-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/base-pack.vsix && cd ../..
+          cd packs/python-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/python-pack.vsix && cd ../..
+          cd packs/docker-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/docker-pack.vsix && cd ../..
+          cd packs/bash-pack && vsce package --allow-missing-repository -o $GITHUB_WORKSPACE/dist/packs/bash-pack.vsix && cd ../..
           cp config/* $GITHUB_WORKSPACE/dist/config/
           cp scripts/copy-config.sh $GITHUB_WORKSPACE/dist/scripts/copy-config.sh
           cp scripts/instal-vsix.sh $GITHUB_WORKSPACE/dist/scripts/instal-vsix.sh
