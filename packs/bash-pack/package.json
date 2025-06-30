@@ -1,9 +1,9 @@
 {
-  "name": "python-pack",
-  "displayName": "python-pack",
+  "name": "bash-pack",
+  "displayName": "bash-pack",
   "publisher": "neyakki",
   "icon": "bash.png",
-  "description": "Extensions for python",
+  "description": "Extensions for bash",
   "version": "0.3.0",
   "engines": {
     "vscode": "^1.94.0"
