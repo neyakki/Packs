@@ -19,11 +19,14 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Установка зависимостей
-        run: npm install
-
       - name: Установка vsce
         run: npm install -g vsce
 
       - name: Сборка VSIX пакета
         run: cd packs/base-pack && npx @vscode/vsce package --allow-missing-repository --skip-license -o base-pack.vsix
+
+      - name: Загрузка VSIX как артефакт
+        uses: actions/upload-artifact@v4
+        with:
+          name: extension
+          path: "*.vsix"
