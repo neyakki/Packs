@@ -1,0 +1,46 @@
+name: Build VSIX
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout репозиторий
+        uses: actions/checkout@v3
+
+      - name: Установка Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "24"
+
+      - name: Установка vsce
+        run: npm install -g vsce
+
+      - name: Сборка настроек
+        run: |
+          mkdir -p $GITHUB_WORKSPACE/dist/{scripts,config,packs}
+          cd packs/base-pack && vsce package --allow-missing-repository --skip-license -o $GITHUB_WORKSPACE/dist/packs/base-pack.vsix
+          cd packs/python-pack && vsce package --allow-missing-repository --skip-license -o $GITHUB_WORKSPACE/dist/packs/python-pack.vsix
+          cd packs/docker-pack && vsce package --allow-missing-repository --skip-license -o $GITHUB_WORKSPACE/dist/packs/docker-pack.vsix
+          cd packs/bash-pack && vsce package --allow-missing-repository --skip-license -o $GITHUB_WORKSPACE/dist/packs/bash-pack.vsix
+          cp config/* $GITHUB_WORKSPACE/dist/config/
+          cp scripts/copy-config.sh $GITHUB_WORKSPACE/dist/scripts/copy-config.sh
+          cp scripts/instal-vsix.sh $GITHUB_WORKSPACE/dist/scripts/instal-vsix.sh
+
+      # - name: Загрузка VSIX как артефакт
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: extension
+      #     path: "dist/"
+
+      - name: Создание GitHub релиза
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
