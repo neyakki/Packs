@@ -4,6 +4,11 @@ on:
   push:
     tags:
       - 'v*'
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -32,11 +37,9 @@ jobs:
           cp scripts/copy-config.sh $GITHUB_WORKSPACE/dist/scripts/copy-config.sh
           cp scripts/install-vsix.sh $GITHUB_WORKSPACE/dist/scripts/install-vsix.sh
 
-      # - name: Загрузка VSIX как артефакт
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: extension
-      #     path: "dist/"
+      - name: Тест
+        uses: actions/upload-artifact@v4
+        run: ls -lh dist/
 
       - name: Создание GitHub релиза
         uses: softprops/action-gh-release@v2
