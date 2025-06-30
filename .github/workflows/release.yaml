@@ -4,8 +4,6 @@ on:
   push:
     tags:
       - 'v*'
-    branches:
-      - main
 
 permissions:
   contents: write
@@ -37,12 +35,14 @@ jobs:
           cp scripts/copy-config.sh $GITHUB_WORKSPACE/dist/scripts/copy-config.sh
           cp scripts/install-vsix.sh $GITHUB_WORKSPACE/dist/scripts/install-vsix.sh
 
-      - name: Тест
-        run: ls -lh dist/
+      - name: Архивация dist
+        run: |    
+          cd dist
+          zip -r ../settings.zip ./*
 
       - name: Создание GitHub релиза
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/*
+          files: settings.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
